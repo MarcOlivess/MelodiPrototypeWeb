@@ -11,32 +11,18 @@
     min-height: 143px;
     width: 100%;
   }
-  @media (max-width: 991px) {
-    .div-2 {
-      max-width: 100%;
-    }
-  }
+
   .div-3 {
     z-index: 10;
     margin-top: -104px;
     width: 100%;
   }
-  @media (max-width: 991px) {
-    .div-3 {
-      max-width: 100%;
-    }
-  }
+
   .div-4 {
     gap: 20px;
     display: flex;
   }
-  @media (max-width: 991px) {
-    .div-4 {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0px;
-    }
-  }
+
   .column {
     display: flex;
     flex-direction: column;
@@ -44,11 +30,7 @@
     width: 22%;
     margin-left: 0px;
   }
-  @media (max-width: 991px) {
-    .column {
-      width: 100%;
-    }
-  }
+
   .div-5 {
     background-color: rgba(172, 124, 90, 0.45);
     display: flex;
@@ -62,12 +44,7 @@
     width: 100%;
     padding: 43px 10px 80px;
   }
-  @media (max-width: 991px) {
-    .div-5 {
-      margin-top: 40px;
-      font-size: 40px;
-    }
-  }
+
   .menuNonclicked {
     font-family: Righteous, sans-serif;
     font-size: 30px;
@@ -83,13 +60,7 @@
     padding-bottom: 30px;
     margin-top: 20px;
   }
-  @media (max-width: 991px) {
-    .menuNonclicked {
-      font-size: 40px;
-      white-space: initial;
-      padding: 0 20px;
-    }
-  }
+
   .menuClicked {
     font-family: Righteous, sans-serif;
     border-radius: 40px;
@@ -103,13 +74,7 @@
     justify-content: center;
     padding: 49px 60px;
   }
-  @media (max-width: 991px) {
-    .menuClicked {
-      font-size: 40px;
-      white-space: initial;
-      padding: 0 20px;
-    }
-  }
+
 
   .column-2 {
     display: flex;
@@ -117,34 +82,18 @@
     line-height: normal;
     width: 78%;
     margin-left: 20px;
-  }
-  @media (max-width: 991px) {
-    .column-2 {
-      width: 100%;
-    }
+    
   }
   .div-11 {
     display: flex;
     flex-direction: column;
-  }
-  @media (max-width: 991px) {
-    .div-11 {
-      max-width: 100%;
-      margin-top: 40px;
-    }
   }
 
   .div-13 {
     gap: 20px;
     display: flex;
   }
-  @media (max-width: 991px) {
-    .div-13 {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0px;
-    }
-  }
+
   .column-3 {
     display: flex;
     flex-direction: column;
@@ -152,11 +101,7 @@
     width: 80%;
     margin-left: 0px;
   }
-  @media (max-width: 991px) {
-    .column-3 {
-      width: 100%;
-    }
-  }
+
   .img {
     aspect-ratio: 2.56;
     object-fit: auto;
@@ -165,12 +110,7 @@
     margin-top: 165px;
     flex-grow: 1;
   }
-  @media (max-width: 991px) {
-    .img {
-      max-width: 100%;
-      margin-top: 40px;
-    }
-  }
+
   .column-4 {
     display: flex;
     flex-direction: column;
@@ -178,21 +118,13 @@
     width: 20%;
     margin-left: 20px;
   }
-  @media (max-width: 991px) {
-    .column-4 {
-      width: 100%;
-    }
-  }
+
   .div-14 {
     display: flex;
     flex-direction: column;
     padding: 0 20px;
   }
-  @media (max-width: 991px) {
-    .div-14 {
-      margin-top: 40px;
-    }
-  }
+
   .div-15 {
     border-radius: 50px;
     border-color: rgba(107, 21, 35, 1);
@@ -205,11 +137,7 @@
     justify-content: center;
     padding: 10px 0;
   }
-  @media (max-width: 991px) {
-    .div-15 {
-      padding-right: 20px;
-    }
-  }
+
   .img-2 {
     aspect-ratio: 1;
     object-fit: auto;
@@ -224,11 +152,7 @@
     margin-top: 11px;
     font: 400 48px Righteous, sans-serif;
   }
-  @media (max-width: 991px) {
-    .div-16 {
-      font-size: 40px;
-    }
-  }
+
   .div-17 {
     align-self: start;
     display: flex;
@@ -238,34 +162,20 @@
     text-align: center;
     margin: 68px 0 0 76px;
   }
-  @media (max-width: 991px) {
-    .div-17 {
-      max-width: 100%;
-      margin-top: 40px;
-      font-size: 40px;
-    }
-  }
+
   .div-18 {
     color: #999;
     font-family: Fira Sans, sans-serif;
   }
-  @media (max-width: 991px) {
-    .div-18 {
-      max-width: 100%;
-      font-size: 40px;
-    }
-  }
+
   .div-19 {
     color: #939393;
     font-family: Fira Sans, sans-serif;
     margin-top: 21px;
   }
-  @media (max-width: 991px) {
-    .div-19 {
-      max-width: 100%;
-      font-size: 40px;
-    }
-  }
+
+/* End of homepage code */
+
   /* Proper CS, convert home page later */
 
 
@@ -287,12 +197,6 @@
     padding-bottom: 10px;
   }
 
-  @media (max-width: 991px) {
-    .header {
-      max-width: 100%;
-      padding: 0 20px;
-    }
-  }
 
   .logo {
     aspect-ratio: 2.56;
@@ -311,24 +215,10 @@
     gap: 18px;
   }
 
-  @media (max-width: 991px) {
-    .main-content {
-      max-width: 100%;
-      flex-wrap: wrap;
-    }
-  }
-
   .sidebar {
     align-self: end;
     flex-grow: 1;
     flex-basis: auto;
-  }
-
-  @media (max-width: 991px) {
-    .sidebar {
-      max-width: 100%;
-      margin-top: 40px;
-    }
   }
 
   .sidebar-content {
@@ -336,26 +226,12 @@
     display: flex;
   }
 
-  @media (max-width: 991px) {
-    .sidebar-content {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0px;
-    }
-  }
-
   .sidebar-column {
     display: flex;
     flex-direction: column;
     line-height: normal;
     margin-left: 0px;
-  }
-
-  @media (max-width: 991px) {
-    .sidebar-column {
-      width: 100%;
     }
-  }
 
   .sidebar-menu {
     background-color: rgba(172, 124, 90, 0.45);
@@ -370,12 +246,6 @@
     padding: 44px 10px 80px;
   }
 
-  @media (max-width: 991px) {
-    .sidebar-menu {
-      font-size: 40px;
-    }
-  }
-
   .menu-item-play {
     font-family: Righteous, sans-serif;
     border-radius: 40px;
@@ -385,14 +255,6 @@
     white-space: nowrap;
     justify-content: center;
     padding: 44px 60px;
-  }
-
-  @media (max-width: 991px) {
-    .menu-item-play {
-      font-size: 40px;
-      white-space: initial;
-      padding: 0 20px;
-    }
   }
 
   .menu-item-learn {
@@ -407,14 +269,6 @@
     padding: 49px 60px;
   }
 
-  @media (max-width: 991px) {
-    .menu-item-learn {
-      font-size: 40px;
-      white-space: initial;
-      padding: 0 20px;
-    }
-  }
-
   .menu-item-chat {
     font-family: Righteous, sans-serif;
     border-radius: 40px;
@@ -427,13 +281,6 @@
     padding: 48px 60px;
   }
 
-  @media (max-width: 991px) {
-    .menu-item-chat {
-      font-size: 40px;
-      white-space: initial;
-      padding: 0 20px;
-    }
-  }
 
   .menu-item-leaderboard {
     font-family: Righteous, sans-serif;
@@ -445,12 +292,6 @@
     padding: 48px 27px;
   }
 
-  @media (max-width: 991px) {
-    .menu-item-leaderboard {
-      font-size: 40px;
-      padding: 0 20px;
-    }
-  }
 
   .menu-item-profile {
     font-family: Righteous, sans-serif;
@@ -464,13 +305,6 @@
     padding: 47px 60px;
   }
 
-  @media (max-width: 991px) {
-    .menu-item-profile {
-      font-size: 40px;
-      white-space: initial;
-      padding: 0 20px;
-    }
-  }
 
   .main-column {
     display: flex;
@@ -480,11 +314,6 @@
     margin-left: 20px;
   }
 
-  @media (max-width: 991px) {
-    .main-column {
-      width: 100%;
-    }
-  }
 
   .main-content-wrapper {
     display: flex;
@@ -492,22 +321,12 @@
     flex-direction: column;
   }
 
-  @media (max-width: 991px) {
-    .main-content-wrapper {
-      max-width: 100%;
-    }
-  }
 
   .main-content-header {
     background-color: #fff7f2;
     height: 80px;
   }
 
-  @media (max-width: 991px) {
-    .main-content-header {
-      max-width: 100%;
-    }
-  }
 
   .main-content-divider {
     border: 4px solid rgba(151, 151, 151, 1);
@@ -525,11 +344,6 @@
     padding-top: 50px;
   }
 
-  @media (max-width: 991px) {
-    .main-content-body {
-      max-width: 100%;
-    }
-  }
 
   .user-profile {
     align-self: start;
@@ -552,12 +366,6 @@
    
   }
 
-  @media (max-width: 991px) {
-    .user-avatar {
-      padding-right: 20px;
-    }
-  }
-
   .user-avatar-image {
     
     aspect-ratio: 1;
@@ -575,12 +383,6 @@
     font: 400 48px Righteous, sans-serif;
   }
 
-  @media (max-width: 991px) {
-    .user-name {
-      font-size: 40px;
-    }
-  }
-
   .title-text {
     color: #6b1523;
     text-align: center;
@@ -596,11 +398,7 @@
   .game-2 {
     width: 100%;
   }
-  @media (max-width: 991px) {
-    .game-2 {
-      max-width: 100%;
-    }
-  }
+
   .game-3 {
     gap: 300px;
     display: flex;
@@ -608,13 +406,7 @@
     margin-left: 40px;
     margin-right: 200px;
   }
-  @media (max-width: 991px) {
-    .game-3 {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0px;
-    }
-  }
+
   .game-column {
     display: flex;
     flex-direction: column;
@@ -622,11 +414,7 @@
     width: 50%;
     margin-left: 0px;
   }
-  @media (max-width: 991px) {
-    .game-column {
-      width: 100%;
-    }
-  }
+
   .game-4 {
     border-radius: 50px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
@@ -645,15 +433,7 @@
     padding: 52px 60px;
     font: 400 64px Righteous, sans-serif;
   }
-  @media (max-width: 991px) {
-    .game-4 {
-      font-size: 40px;
-      max-width: 100%;
-      margin-top: 40px;
-      white-space: initial;
-      padding: 0 20px;
-    }
-  }
+
   .game-column-2 {
     display: flex;
     flex-direction: column;
@@ -661,11 +441,7 @@
     width: 50%;
     margin-left: 20px;
   }
-  @media (max-width: 991px) {
-    .game-column-2 {
-      width: 100%;
-    }
-  }
+
   .game-5 {
     border-radius: 50px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
@@ -684,25 +460,12 @@
     padding: 47px 60px;
     font: 400 64px Righteous, sans-serif;
   }
-  @media (max-width: 991px) {
-    .game-5 {
-      font-size: 40px;
-      max-width: 100%;
-      margin-top: 40px;
-      white-space: initial;
-      padding: 0 20px;
-    }
-  }
+
   .game-6 {
     margin-top: 68px;
     width: 100%;
   }
-  @media (max-width: 991px) {
-    .game-6 {
-      max-width: 100%;
-      margin-top: 40px;
-    }
-  }
+
   .game-7 {
     gap: 300px;
     display: flex;
@@ -710,13 +473,7 @@
     margin-left: 40px;
     margin-right: 200px;
   }
-  @media (max-width: 991px) {
-    .game-7 {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 50px;
-    }
-  }
+
   .game-8 {
     border-radius: 50px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
@@ -735,15 +492,7 @@
     padding: 44px 60px;
     font: 400 64px Righteous, sans-serif;
   }
-  @media (max-width: 991px) {
-    .game-8 {
-      font-size: 40px;
-      max-width: 100%;
-      margin-top: 40px;
-      white-space: initial;
-      padding: 0 20px;
-    }
-  }
+
   .game-column-3 {
     display: flex;
     flex-direction: column;
@@ -751,11 +500,7 @@
     width: 50%;
     margin-left: 20px;
   }
-  @media (max-width: 991px) {
-    .game-column-3 {
-      width: 100%;
-    }
-  }
+
   .game-9 {
     border-radius: 50px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
@@ -772,14 +517,6 @@
     width: 100%;
     padding: 51px 60px;
     font: 400 64px Righteous, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-9 {
-      font-size: 40px;
-      max-width: 100%;
-      margin-top: 40px;
-      padding: 0 20px;
-    }
   }
 
   .lesson {
@@ -806,11 +543,7 @@
     padding-top:  40px;
     padding-bottom:  40px;
   }
-  @media (max-width: 991px) {
-    .lesson-2 {
-      max-width: 100%;
-    }
-  }
+
   .lesson-3 {
     border-radius: 50px;
     border-color: rgba(154, 79, 79, 0.29);
@@ -822,11 +555,7 @@
     margin-top: 30px;
     width: 100%;
   }
-  @media (max-width: 991px) {
-    .lesson-3 {
-      max-width: 100%;
-    }
-  }
+
   .lesson-4 {
     border-radius: 50px;
     border-color: rgba(154, 79, 79, 0.29);
@@ -838,11 +567,7 @@
     margin-top: 30px;
     width: 100%;
   }
-  @media (max-width: 991px) {
-    .lesson-4 {
-      max-width: 100%;
-    }
-  }
+
   .lesson-5 {
     border-radius: 50px;
     background-color: rgba(224, 207, 193, 1);
@@ -853,9 +578,4 @@
     padding-bottom:  40px;
     margin-top: 30px;
     width: 100%;
-  }
-  @media (max-width: 991px) {
-    .div-5 {
-      max-width: 100%;
-    }
   }
