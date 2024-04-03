@@ -787,9 +787,11 @@
     margin-left:  100px;
     margin-right: 100px;
     font-family: Righteous, sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
+    text-indent: 80px;
+    padding-top:  40px;
     
   }
   .lesson-2 {
@@ -798,8 +800,9 @@
     border-style: solid;
     border-width: 7px;
     background-color: #e0cfc1;
-    min-height: 147px;
     width: 100%;
+    padding-top:  40px;
+    padding-bottom:  40px;
   }
   @media (max-width: 991px) {
     .lesson-2 {
@@ -812,7 +815,8 @@
     border-style: solid;
     border-width: 7px;
     background-color: #e0cfc1;
-    min-height: 150px;
+    padding-top:  40px;
+    padding-bottom:  40px;
     margin-top: 30px;
     width: 100%;
   }
@@ -827,7 +831,8 @@
     border-style: solid;
     border-width: 7px;
     background-color: #e0cfc1;
-    min-height: 151px;
+    padding-top:  40px;
+    padding-bottom:  40px;
     margin-top: 30px;
     width: 100%;
   }
@@ -842,7 +847,8 @@
     border-color: rgba(154, 79, 79, 0.29);
     border-style: solid;
     border-width: 7px;
-    min-height: 150px;
+    padding-top:  40px;
+    padding-bottom:  40px;
     margin-top: 30px;
     width: 100%;
   }
