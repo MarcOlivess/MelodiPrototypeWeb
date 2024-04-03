@@ -512,9 +512,9 @@
   .main-content-divider {
     border: 4px solid rgba(151, 151, 151, 1);
     background-color: #979797;
-    margin-left: 45px;
+   
     width: 100%;
-    max-width: 90%;
+    max-width: 100%;
     height: 4px;
   }
 
@@ -535,6 +535,7 @@
     flex-direction: column;
     padding: 0 20px;
     margin-top: -80px;
+    margin-right: 10%;
     
   }
 
@@ -560,7 +561,7 @@
     aspect-ratio: 1;
     object-fit: auto;
     object-position: center;
-    width: 192px;
+    width: 120px;
     alt: "User avatar";
   }
 
@@ -776,5 +777,77 @@
       max-width: 100%;
       margin-top: 40px;
       padding: 0 20px;
+    }
+  }
+
+  .lesson {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left:  100px;
+    margin-right: 100px;
+    font-family: Righteous, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    
+  }
+  .lesson-2 {
+    border-radius: 50px;
+    border-color: rgba(154, 79, 79, 0.29);
+    border-style: solid;
+    border-width: 7px;
+    background-color: #e0cfc1;
+    min-height: 147px;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .lesson-2 {
+      max-width: 100%;
+    }
+  }
+  .lesson-3 {
+    border-radius: 50px;
+    border-color: rgba(154, 79, 79, 0.29);
+    border-style: solid;
+    border-width: 7px;
+    background-color: #e0cfc1;
+    min-height: 150px;
+    margin-top: 30px;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .lesson-3 {
+      max-width: 100%;
+    }
+  }
+  .lesson-4 {
+    border-radius: 50px;
+    border-color: rgba(154, 79, 79, 0.29);
+    border-style: solid;
+    border-width: 7px;
+    background-color: #e0cfc1;
+    min-height: 151px;
+    margin-top: 30px;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .lesson-4 {
+      max-width: 100%;
+    }
+  }
+  .lesson-5 {
+    border-radius: 50px;
+    background-color: rgba(224, 207, 193, 1);
+    border-color: rgba(154, 79, 79, 0.29);
+    border-style: solid;
+    border-width: 7px;
+    min-height: 150px;
+    margin-top: 30px;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-5 {
+      max-width: 100%;
     }
   }
