@@ -581,3 +581,195 @@
   
     font: 400 120px Righteous, sans-serif;
   }
+
+  .game {
+    display: flex;
+    flex-direction: column;
+  }
+  .game-2 {
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .game-2 {
+      max-width: 100%;
+    }
+  }
+  .game-3 {
+    gap: 50%;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 35%;
+  }
+  @media (max-width: 991px) {
+    .game-3 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .game-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .game-column {
+      width: 100%;
+    }
+  }
+  .game-4 {
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-color: rgba(129, 64, 64, 1);
+    border-style: solid;
+    border-width: 7px;
+    background-color: #ffc4c0;
+    flex-grow: 1;
+    align-items: center;
+    color: #550814;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 52px 60px;
+    font: 400 64px Righteous, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .game-4 {
+      font-size: 40px;
+      max-width: 100%;
+      margin-top: 40px;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  .game-column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .game-column-2 {
+      width: 100%;
+    }
+  }
+  .game-5 {
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-color: rgba(129, 64, 64, 1);
+    border-style: solid;
+    border-width: 7px;
+    background-color: #ffc4c0;
+    flex-grow: 1;
+    align-items: center;
+    color: #550814;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 47px 60px;
+    font: 400 64px Righteous, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .game-5 {
+      font-size: 40px;
+      max-width: 100%;
+      margin-top: 40px;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  .game-6 {
+    margin-top: 68px;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .game-6 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .game-7 {
+    gap: 50%;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 40%;
+  }
+  @media (max-width: 991px) {
+    .game-7 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 50px;
+    }
+  }
+  .game-8 {
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-color: rgba(129, 64, 64, 1);
+    border-style: solid;
+    border-width: 7px;
+    background-color: #ffc4c0;
+    flex-grow: 1;
+    align-items: center;
+    color: #550814;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 44px 60px;
+    font: 400 64px Righteous, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .game-8 {
+      font-size: 40px;
+      max-width: 100%;
+      margin-top: 40px;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  .game-column-3 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .game-column-3 {
+      width: 100%;
+    }
+  }
+  .game-9 {
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-color: rgba(129, 64, 64, 1);
+    border-style: solid;
+    border-width: 7px;
+    background-color: #ffc4c0;
+    flex-grow: 1;
+    align-items: center;
+    color: #550814;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 51px 60px;
+    font: 400 64px Righteous, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-9 {
+      font-size: 40px;
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  }
