@@ -521,6 +521,8 @@
   .main-content-body {
     background-color: #fff7f2;
     height: 919px;
+    margin: auto;
+    padding-top: 50px;
   }
 
   @media (max-width: 991px) {
