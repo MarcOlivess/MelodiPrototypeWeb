@@ -70,15 +70,17 @@
   }
   .menuNonclicked {
     font-family: Righteous, sans-serif;
+    font-size: 30px;
     border-radius: 40px;
     border-color: rgba(129, 64, 64, 1);
     border-style: solid;
     border-width: 5px;
     background-color: rgba(241, 240, 239, 0.3);
     align-items: center;
-    white-space: nowrap;
+
     justify-content: center;
-    padding: 44px 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin-top: 20px;
   }
   @media (max-width: 991px) {
@@ -280,7 +282,9 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 13px 36px;
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   @media (max-width: 991px) {
@@ -295,14 +299,13 @@
     object-fit: auto;
     object-position: center;
     width: 302px;
-    max-width: 100%;
-    alt: "Company logo";
+    max-width: 60%;
+    padding-left: 20px;
+    alt: "Melodi logo";
   }
 
   .main-content {
-    z-index: 10;
     display: flex;
-    margin-top: -98px;
     width: 100%;
     align-items: flex-start;
     gap: 18px;
@@ -317,7 +320,6 @@
 
   .sidebar {
     align-self: end;
-    margin-top: 98px;
     flex-grow: 1;
     flex-basis: auto;
   }
@@ -346,7 +348,6 @@
     display: flex;
     flex-direction: column;
     line-height: normal;
-    width: 24%;
     margin-left: 0px;
   }
 
@@ -365,7 +366,7 @@
     color: #6b1523;
     font-weight: 400;
     text-align: center;
-    width: 100%;
+    width: 250px;
     padding: 44px 10px 80px;
   }
 
@@ -499,8 +500,7 @@
 
   .main-content-header {
     background-color: #fff7f2;
-    z-index: 10;
-    height: 122px;
+    height: 80px;
   }
 
   @media (max-width: 991px) {
@@ -534,16 +534,19 @@
     display: flex;
     flex-direction: column;
     padding: 0 20px;
+    margin-top: -80px;
+    
   }
 
   .user-avatar {
     border-radius: 50px;
-    border: 34px solid rgba(107, 21, 35, 1);
-    background-color: #897171;
+    border: 24px solid rgba(107, 21, 35, 1);
+    background-color: rgba(107, 21, 35, 1);
+    fill:rgba(107, 21, 35, 1);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 9px;
+   
   }
 
   @media (max-width: 991px) {
@@ -553,6 +556,7 @@
   }
 
   .user-avatar-image {
+    
     aspect-ratio: 1;
     object-fit: auto;
     object-position: center;
@@ -579,7 +583,7 @@
     text-align: center;
     align-self: center;
   
-    font: 400 120px Righteous, sans-serif;
+    font: 400 80px Righteous, sans-serif;
   }
 
   .game {
@@ -595,11 +599,11 @@
     }
   }
   .game-3 {
-    gap: 50%;
+    gap: 300px;
     display: flex;
     margin-top: 100px;
-    margin-left: 10%;
-    margin-right: 35%;
+    margin-left: 40px;
+    margin-right: 200px;
   }
   @media (max-width: 991px) {
     .game-3 {
@@ -697,10 +701,11 @@
     }
   }
   .game-7 {
-    gap: 50%;
+    gap: 300px;
     display: flex;
-    margin-left: 10%;
-    margin-right: 40%;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 200px;
   }
   @media (max-width: 991px) {
     .game-7 {
