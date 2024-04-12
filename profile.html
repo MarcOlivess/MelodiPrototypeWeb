@@ -1,40 +1,35 @@
+<!-- profile.html -->
+
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
-
-<div class="container">
-    <header class="header">
-        <a href="index.html"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/10fd5204cd5e7c67eace836ce88420b82700cb27ade0e2e8655e2f3dd6667043?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&" alt="Company logo" class="logo"></a>
-    </header>
-    <main class="main-content">
-      <aside class="sidebar">
-        <div class="sidebar-content">
-          <div class="sidebar-column">
-            <nav class="sidebar-menu">
-                <a href="play.html" class="menuNonclicked">Play</a>
-                <a href="learn.html" class="menuNonclicked">Learn</a>
-                <a href="chat.html" class="menuNonclicked">Chat</a>
-                <a href="leaderboard.html" class="menuNonclicked">Leaderboard</a>
-                <a href="profile.html" class="menuNonclicked">Profile</a>
-            </nav>
-          </div>
-          <div class="main-column">
-            <div class="main-content-wrapper">
-              <div class ="title-text">Profile</div>
-              <div class="main-content-divider"></div>
-              <div class="main-content-body">
-                <img src="profileStandIn.png"width="900" height: auto/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </aside>
-      <div class="user-profile">
-        <div class="user-avatar">
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c281d02ff57597a8ea93a8efab0d5f3ba580e71b2446bbceea23901d28483257?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&" alt="User avatar" class="user-avatar-image" />
-        </div>
-        <div class="user-name">Name</div>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <a href="play.html">Play</a>
+      <a href="learn.html">Learn</a>
+      <a href="chat.html">Chat</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="profile.html" class="active">Profile</a>
+    </div>
+    <div class="profile">
+      <div class="profile-header">
+        <h1>Profile</h1>
       </div>
-    </main>
+      <div class="profile-picture">
+        <img id="profilePic" src="" alt="Profile Picture">
+      </div>
+      <div class="profile-details">
+        <p><span>Name:</span> <span id="username"></span></p>
+        <p><span>Goal:</span> <span id="goal"></span></p>
+        <p><span>Lesson Progress:</span> <span id="lessonProgress"></span></p>
+      </div>
+    </div>
   </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>
