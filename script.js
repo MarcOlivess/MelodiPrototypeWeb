@@ -31,15 +31,28 @@ var mockData = {
   
   // Function to display user profile on the home page
   function showProfile() {
-    var email = gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getEmail();
-    var userData = JSON.parse(localStorage.getItem(email));
-    
-    if (userData) {
-      document.getElementById('profileUsername').textContent = userData.username;
-      document.getElementById('profileEmail').textContent = userData.email;
-      document.getElementById('profileProgress').textContent = JSON.stringify(userData.progress);
-      document.getElementById('profileInteractions').textContent = userData.interactions;
-    }
+    gapi.load('auth2', function () {
+      gapi.auth2.init().then(function () {
+        if (gapi.auth2.getAuthInstance().isSignedIn.get()) {
+          var profile = gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile();
+          var email = profile.getEmail();
+          var userData = JSON.parse(localStorage.getItem(email));
+  
+          if (userData) {
+            document.getElementById('profileUsername').textContent = userData.username;
+            document.getElementById('profileEmail').textContent = userData.email;
+            document.getElementById('profileProgress').textContent = JSON.stringify(userData.progress);
+            document.getElementById('profileInteractions').textContent = userData.interactions;
+          }
+        } else {
+          // User is not signed in, redirect to the login page or show the login section
+          window.location.href = "index.html";
+          // or
+          // document.getElementById('loginSection').style.display = 'block';
+          // document.getElementById('profileSection').style.display = 'none';
+        }
+      });
+    });
   }
   
   // Function to handle user sign out
