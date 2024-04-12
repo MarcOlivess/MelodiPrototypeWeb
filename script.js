@@ -11,18 +11,22 @@ var mockData = {
     var profile = googleUser.getBasicProfile();
     var username = profile.getName();
     var email = profile.getEmail();
-    
+    var imageUrl = profile.getImageUrl();
+  
     var userData = {
       username: username,
       email: email,
-      progress: mockData,
-      interactions: 0
+      imageUrl: imageUrl,
+      progress: {
+        lesson1: false,
+        lesson2: false,
+        lesson3: false
+      },
+      leaderboardScore: 0
     };
-    
+  
     localStorage.setItem(email, JSON.stringify(userData));
-    
-    // Redirect to the home page after successful login
-    window.location.href = "home.html";
+    updateWebsiteInfo(userData);
   }
   
   // Function to display user profile on the home page
@@ -42,10 +46,29 @@ var mockData = {
   function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
-      // Redirect to the login page after signing out
-      window.location.href = "index.html";
+      document.getElementById('loginSection').style.display = 'block';
+      document.getElementById('profileSection').style.display = 'none';
+      clearWebsiteInfo();
       localStorage.clear();
     });
+  }
+  
+  function clearWebsiteInfo() {
+    document.getElementById('playerName').textContent = '';
+    document.getElementById('profilePhoto').src = '';
+    document.getElementById('lesson1').checked = false;
+    document.getElementById('lesson2').checked = false;
+    document.getElementById('lesson3').checked = false;
+    document.getElementById('leaderboardScore').textContent = '';
+  }
+
+  function updateWebsiteInfo(userData) {
+    document.getElementById('playerName').textContent = userData.username;
+    document.getElementById('profilePhoto').src = userData.imageUrl;
+    document.getElementById('lesson1').checked = userData.progress.lesson1;
+    document.getElementById('lesson2').checked = userData.progress.lesson2;
+    document.getElementById('lesson3').checked = userData.progress.lesson3;
+    document.getElementById('leaderboardScore').textContent = userData.leaderboardScore;
   }
   
   // Call showProfile function when the home page loads
