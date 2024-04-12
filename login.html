@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Learning Website</title>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="script.js"></script>
+  <meta name="google-signin-client_id" content="669825770299-24mjvvvf449kg1bf6jghi3huo87ugdhp.apps.googleusercontent.com">
+</head>
+<body>
+  <h1>Welcome to Music Learning Website</h1>
+  
+  <div id="loginSection">
+    <h2>Login</h2>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  </div>
+  
+  <div id="profileSection" style="display: none;">
+    <h2>Profile</h2>
+    <p>Username: <span id="profileUsername"></span></p>
+    <p>Email: <span id="profileEmail"></span></p>
+    <p>Progress: <span id="profileProgress"></span></p>
+    <p>Interactions: <span id="profileInteractions"></span></p>
+    <button onclick="signOut()">Sign Out</button>
+  </div>
+</body>
+</html>
