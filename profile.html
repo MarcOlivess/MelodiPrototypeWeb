@@ -5,8 +5,16 @@
 <head>
   <title>User Profile</title>
   <link rel="stylesheet" href="profile.css">
+  <link href="https://fonts.googleapis.com/css?family=Arial" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="Full Logo.png" alt="Logo">
+      </a>
+    </div>
+  </header>
   <div class="container">
     <div class="menu">
       <a href="play.html">Play</a>
@@ -19,13 +27,23 @@
       <div class="profile-header">
         <h1>Profile</h1>
       </div>
-      <div class="profile-picture">
-        <img id="profilePic" src="" alt="Profile Picture">
+      <div class="profile-info">
+        <div class="profile-picture">
+          <img id="profilePic" src="" alt="Profile Picture">
+        </div>
+        <div class="profile-name">
+          <span id="username"></span>
+        </div>
       </div>
       <div class="profile-details">
-        <p><span>Name:</span> <span id="username"></span></p>
+        <p><span>Rank:</span> <span id="topRank"></span></p>
         <p><span>Goal:</span> <span id="goal"></span></p>
-        <p><span>Lesson Progress:</span> <span id="lessonProgress"></span></p>
+        <div class="progress-container">
+          <span>Progress:</span>
+          <div class="progress-bar">
+            <div id="lessonProgress" class="progress"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

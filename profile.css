@@ -1,83 +1,150 @@
 /* profile.css */
 
 body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    display: flex;
-    height: 100%;
-  }
-  
-  .menu {
-    display: flex;
-    flex-direction: column;
-    background-color: #dabfae;
-    padding: 20px;
-    width: 200px;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .menu a {
-    text-decoration: none;
-    padding: 15px;
-    color: #333;
-    text-align: center;
-    background-color: #e1cec1;
-    border: 2px solid #834243;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    width: 80%;
-    transition: background-color 0.3s ease;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* Set font family for the entire document */
+}
 
-  }
-  
-  .menu a:hover {
-    background-color: #ccc;
-  }
-  
-  .menu a.active {
-    background-color: #bbb;
-  }
-  
-  .profile {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-  }
-  
-  .profile-header {
-    margin-bottom: 20px;
-  }
-  
-  .profile-picture img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  
-  .profile-details p {
-    margin: 5px 0;
-  }
-  
-  .profile-details span {
-    font-weight: bold;
-  }
+header {
+  background-color: #6b1523;
+  color: #fff; /* Add color for text */
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
 
-  .profile-details p {
-    margin: 5px 0;
-  }
+.logo img {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+}
 
-  .profile-details span {
-    font-weight: bold;
-  }
+.container {
+  display: flex;
+  height: calc(100% - 60px);
+}
 
-  .profile-details span:first-child {
-    display: inline-block;
-    width: 120px;
-  }
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #dabfae;
+  padding: 20px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 15px;
+  color: #333;
+  text-align: center;
+  background-color: #e1cec1;
+  border: 2px solid #834243;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #ccc;
+}
+
+.menu a.active {
+  background-color: #bbb;
+}
+
+.profile {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #fff7f2;
+}
+
+.profile-header {
+  margin-bottom: 30px; /* Increased margin-bottom */
+  color: #6b1523;
+}
+
+.profile-header h1 {
+  font-size: 24px;
+}
+
+.profile-picture {
+  margin-right: 20px; /* Moved profile picture styling to its own class */
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-name {
+  font-size: 50px;
+  color: #6b1523;
+  font-weight: bold;
+}
+
+.profile-name span:first-child {
+  font-weight: bold;
+  color: #6b1523;
+  margin-right: 5px;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.profile-details p {
+  margin: 50px 0; /* Adjusted margin */
+  color: #333;
+  font-size: 30px; /* Adjusted font size */
+}
+
+.profile-details span {
+  font-weight: bold;
+}
+
+.profile-details span:first-child {
+  display: inline-block;
+  width: 120px;
+  color: #6b1523;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.progress-container span {
+  margin-right: 10px;
+  color: #6b1523;
+  font-size: 25px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background-color: #6b1523;
+  transition: width 0.5s ease;
+}

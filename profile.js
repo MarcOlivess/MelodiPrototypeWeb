@@ -9,7 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('username').textContent = currentUser.username;
     document.getElementById('profilePic').src = currentUser.profilePic;
     document.getElementById('goal').textContent = currentUser.goal;
-    document.getElementById('lessonProgress').textContent = currentUser.lessonProgress;
+    document.getElementById('topRank').textContent = currentUser.topRank;
+
+    // Update lesson progress bar
+    var lessonProgress = currentUser.lessonProgress;
+    var progressPercentage = (lessonProgress / 4) * 100;
+    document.getElementById('lessonProgress').style.width = progressPercentage + '%';
   } else {
     // User not logged in, redirect to the login page
     window.location.href = 'login.html';
