@@ -1,5 +1,16 @@
 
 
+  body {
+    
+    background-color: #FFFBF9;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  a, u {
+    text-decoration: none;
+  }
 
   .div {
     background-color: rgba(255, 247, 242, 1);
@@ -46,33 +57,44 @@
   }
 
   .menuNonclicked {
+    text-decoration: none;
     font-family: Righteous, sans-serif;
-    font-size: 30px;
-    border-radius: 40px;
-    border-color: rgba(129, 64, 64, 1);
+    font-size: 35px;
+    border-radius: 30px;
+    border-color: #814040;
     border-style: solid;
     border-width: 5px;
-    background-color: rgba(241, 240, 239, 0.3);
+    background-color: #FFFBFB;
     align-items: center;
-
+    color: #6B1523;
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 25px;
+    transition: 0.5s ease; /* transition effect */ 
+
+  }
+  .menuNonclicked:hover{
+ 
+      background-color: #6B1523;
+      color: #E9A1AD;
   }
 
   .menuClicked {
+    text-decoration: none;
     font-family: Righteous, sans-serif;
-    border-radius: 40px;
+    font-size: 35px;
+    border-radius: 30px;
     border-color: rgba(129, 64, 64, 1);
     border-style: solid;
     border-width: 5px;
-    background-color: rgba(241, 240, 239, 0.3);
-    margin-top: 20px;
+    background-color: #6B1523;
     align-items: center;
-    white-space: nowrap;
+    color: #E9A1AD;
     justify-content: center;
-    padding: 49px 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 25px;
   }
 
 
@@ -180,7 +202,7 @@
 
 
   .container {
-    background-color: rgba(255, 247, 242, 1);
+    background-color: #FFFBF9;
     display: flex;
     flex-direction: column;
   }
@@ -209,6 +231,7 @@
   }
 
   .main-content {
+    background-color: #FFFBF9;
     display: flex;
     width: 100%;
     align-items: flex-start;
@@ -234,7 +257,7 @@
     }
 
   .sidebar-menu {
-    background-color: rgba(172, 124, 90, 0.45);
+    background-color: #FFFBF9;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -242,67 +265,8 @@
     color: #6b1523;
     font-weight: 400;
     text-align: center;
-    width: 250px;
-    padding: 44px 10px 80px;
-  }
-
-  .menu-item-play {
-    font-family: Righteous, sans-serif;
-    border-radius: 40px;
-    border: 5px solid rgba(129, 64, 64, 1);
-    background-color: rgba(241, 240, 239, 0.3);
-    align-items: center;
-    white-space: nowrap;
-    justify-content: center;
-    padding: 44px 60px;
-  }
-
-  .menu-item-learn {
-    font-family: Righteous, sans-serif;
-    border-radius: 40px;
-    border: 5px solid rgba(107, 21, 35, 1);
-    background-color: rgba(241, 240, 239, 0.3);
-    margin-top: 20px;
-    align-items: center;
-    white-space: nowrap;
-    justify-content: center;
-    padding: 49px 60px;
-  }
-
-  .menu-item-chat {
-    font-family: Righteous, sans-serif;
-    border-radius: 40px;
-    border: 5px solid rgba(129, 64, 64, 1);
-    background-color: rgba(241, 240, 239, 0.3);
-    margin-top: 20px;
-    align-items: center;
-    white-space: nowrap;
-    justify-content: center;
-    padding: 48px 60px;
-  }
-
-
-  .menu-item-leaderboard {
-    font-family: Righteous, sans-serif;
-    border-radius: 40px;
-    border: 5px solid rgba(129, 64, 64, 1);
-    background-color: rgba(241, 240, 239, 0.3);
-    margin-top: 20px;
-    justify-content: center;
-    padding: 48px 27px;
-  }
-
-
-  .menu-item-profile {
-    font-family: Righteous, sans-serif;
-    border-radius: 40px;
-    border: 5px solid rgba(129, 64, 64, 1);
-    background-color: rgba(241, 240, 239, 0.3);
-    margin-top: 20px;
-    align-items: center;
-    white-space: nowrap;
-    justify-content: center;
-    padding: 47px 60px;
+    width: 220px;
+    padding: 12px 10px 80px;
   }
 
 
@@ -316,6 +280,7 @@
 
 
   .main-content-wrapper {
+    background-color: #FFFBF9;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -323,7 +288,7 @@
 
 
   .main-content-header {
-    background-color: #fff7f2;
+    background-color: #FFFBF9;
     height: 80px;
   }
 
@@ -338,7 +303,7 @@
   }
 
   .main-content-body {
-    background-color: #fff7f2;
+    background-color: #FFFBF9;
     height: 919px;
     margin: auto;
     padding-top: 50px;
@@ -399,12 +364,10 @@
     width: 100%;
   }
 
-  .game-3 {
+  .game-row {
     gap: 300px;
     display: flex;
-    margin-top: 100px;
-    margin-left: 40px;
-    margin-right: 200px;
+    margin-top: 10px;
   }
 
   .game-column {
@@ -415,23 +378,25 @@
     margin-left: 0px;
   }
 
-  .game-4 {
+  .game-button {
     border-radius: 50px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
       0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-color: rgba(129, 64, 64, 1);
     border-style: solid;
-    border-width: 7px;
-    background-color: #ffc4c0;
-    flex-grow: 1;
+    border-width: 6px;
+    background-color: #FFEAE5;
     align-items: center;
     color: #550814;
     white-space: nowrap;
     text-align: center;
-    justify-content: center;
-    width: 100%;
-    padding: 52px 60px;
-    font: 400 64px Righteous, sans-serif;
+    width: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+    font: 400 40px Righteous, sans-serif;
   }
 
   .game-column-2 {
@@ -440,25 +405,6 @@
     line-height: normal;
     width: 50%;
     margin-left: 20px;
-  }
-
-  .game-5 {
-    border-radius: 50px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
-      0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-color: rgba(129, 64, 64, 1);
-    border-style: solid;
-    border-width: 7px;
-    background-color: #ffc4c0;
-    flex-grow: 1;
-    align-items: center;
-    color: #550814;
-    white-space: nowrap;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    padding: 47px 60px;
-    font: 400 64px Righteous, sans-serif;
   }
 
   .game-6 {
@@ -474,25 +420,6 @@
     margin-right: 200px;
   }
 
-  .game-8 {
-    border-radius: 50px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
-      0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-color: rgba(129, 64, 64, 1);
-    border-style: solid;
-    border-width: 7px;
-    background-color: #ffc4c0;
-    flex-grow: 1;
-    align-items: center;
-    color: #550814;
-    white-space: nowrap;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    padding: 44px 60px;
-    font: 400 64px Righteous, sans-serif;
-  }
-
   .game-column-3 {
     display: flex;
     flex-direction: column;
@@ -501,85 +428,49 @@
     margin-left: 20px;
   }
 
-  .game-9 {
-    border-radius: 50px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
-      0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-color: rgba(129, 64, 64, 1);
-    border-style: solid;
-    border-width: 7px;
-    background-color: #ffc4c0;
-    flex-grow: 1;
-    align-items: center;
-    color: #550814;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    padding: 51px 60px;
-    font: 400 64px Righteous, sans-serif;
-  }
 
   .lesson {
+    
+    text-decoration: none;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     margin-left:  100px;
     margin-right: 100px;
     font-family: Righteous, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
     text-align: left;
     text-indent: 80px;
     padding-top:  40px;
     
   }
-  .lesson-2 {
+
+  .lesson-button {
+    text-decoration: none;
+
+    color: #6B1523;
+    font-family: Righteous, sans-serif;
+  
     border-radius: 50px;
-    border-color: rgba(154, 79, 79, 0.29);
+    border-color: #814040;
     border-style: solid;
     border-width: 7px;
-    background-color: #e0cfc1;
+    background-color: #FFEAE5;
     width: 100%;
+    
     padding-top:  40px;
     padding-bottom:  40px;
+    margin-top: 20px;
+    transition: 0.5s ease; /* transition effect */ 
   }
 
-  .lesson-3 {
-    border-radius: 50px;
-    border-color: rgba(154, 79, 79, 0.29);
-    border-style: solid;
-    border-width: 7px;
-    background-color: #e0cfc1;
-    padding-top:  40px;
-    padding-bottom:  40px;
-    margin-top: 30px;
-    width: 100%;
-  }
-
-  .lesson-4 {
-    border-radius: 50px;
-    border-color: rgba(154, 79, 79, 0.29);
-    border-style: solid;
-    border-width: 7px;
-    background-color: #e0cfc1;
-    padding-top:  40px;
-    padding-bottom:  40px;
-    margin-top: 30px;
-    width: 100%;
-  }
-
-  .lesson-5 {
-    border-radius: 50px;
-    background-color: rgba(224, 207, 193, 1);
-    border-color: rgba(154, 79, 79, 0.29);
-    border-style: solid;
-    border-width: 7px;
-    padding-top:  40px;
-    padding-bottom:  40px;
-    margin-top: 30px;
-    width: 100%;
-  }
+  .lesson-button:hover{
+    background-color: #6B1523;
+    color: #E9A1AD;
+}
 
   .piano-container {
       background-color: #fff7f2;
   }
+

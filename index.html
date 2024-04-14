@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="style.css">
   </head>
 
+  <header class="header">
+    <a href="index.html"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/10fd5204cd5e7c67eace836ce88420b82700cb27ade0e2e8655e2f3dd6667043?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&" alt="Company logo" class="logo"></a>
+</header>
+
 <body>
   <div id="profileSection" style="display: none;">
     <h2>Profile</h2>
@@ -17,17 +21,16 @@
     <button onclick="signOut()">Sign Out</button>
   </div>
   <div class="div">
-    <div class="div-2"></div>
-    <div class="div-3">
-      <div class="div-4">
-        <div class="column">
-          <div class="div-5">
+    
+    <div class="sidebar-content">
+      <div class="sidebar-column">
+        <nav class="sidebar-menu">
             <a href="play.html" class="menuNonclicked">Play</a>
             <a href="learn.html" class="menuNonclicked">Learn</a>
             <a href="chat.html" class="menuNonclicked">Chat</a>
             <a href="leaderboard.html" class="menuNonclicked">Leaderboard</a>
             <a href="profile.html" class="menuNonclicked">Profile</a>
-          </div>
+        </nav>
         </div>
         <div class="column-2">
           <div class="div-11">
@@ -40,7 +43,7 @@
                 </div>
                 <div class="column-4">
                   <div class="div-14">
-                    <div class="div-15">
+                    <div class="user-avatar">
                       <img id="profilePhoto" loading="lazy" srcset="..." class="img-2" />
                     </div>
                     <div id="loginSection">
