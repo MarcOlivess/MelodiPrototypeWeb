@@ -1,0 +1,164 @@
+.container {
+  background-color: rgba(255, 247, 242, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  background-color: #6b1523;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  aspect-ratio: 2.56;
+  object-fit: auto;
+  object-position: center;
+  width: 302px;
+  max-width: 60%;
+  padding-left: 20px;
+  alt: "Melodi logo";
+}
+
+h1 {
+  display: flex;
+  color: #6b1523;
+  /* text-align: center; */
+  justify-content: center;
+}
+
+.question {
+  /* color: red; */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.question input[type="radio"] {
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+  border: 2px solid red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 800px;
+}
+
+.submit-button {
+  padding: 15px 30px;
+  background-color: green;
+  color: black;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.submit2-button {
+  padding: 15px 30px;
+  background-color: green;
+  color: black;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.submit2-button:hover {
+  background-color: #6b1523;
+}
+
+.submit3-button {
+  padding: 15px 30px;
+  background-color: green;
+  color: black;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.submit3-button:hover {
+  background-color: #6b1523;
+}
+
+.submit4-button {
+  padding: 15px 30px;
+  background-color: green;
+  color: black;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.submit4-button:hover {
+  background-color: #6b1523;
+}
+
+.back-button {
+  padding: 15px 30px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #6b1523;
+}
+
+.submit-button:hover {
+  background-color: #6b1523;
+}
+
+.score-box {
+  border: 2px solid black;
+  border-radius: 40px;
+  color: #ebebbb;
+  background-color: #6b1523;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+.label-score {
+  font-size: 25px;
+}
+
+.score {
+  font-size: 25px;
+  display: none;
+}
+.score2 {
+  font-size: 25px;
+  display: none;
+}
+.score3 {
+  font-size: 25px;
+  display: none;
+}
+.score4 {
+  font-size: 25px;
+  display: none;
+}
+
+.wrong-answer {
+  /* font-size: 25px; */
+  background-color: rgba(255, 255, 0, 0.3);
+  display: none;
+}
