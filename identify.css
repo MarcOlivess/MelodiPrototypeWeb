@@ -743,24 +743,5 @@ body, html {
         transition: width 0.5s ease;
       }
 
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-      }
       
-      .user-avatar {
-        margin-left: auto;
-      }
-      
-      .user-avatar img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-      }
-      
-      #loginSection {
-        margin-left: 10px;
-      }
       
