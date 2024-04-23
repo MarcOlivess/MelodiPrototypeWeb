@@ -555,193 +555,90 @@ body, html {
         font: 400 80px Righteous, sans-serif;
       }
       
-      .game {
-        display: flex;
-        flex-direction: column;
-      }
-      .game-2 {
-        width: 100%;
-      }
-      
-      .game-row {
-        gap: 300px;
-        display: flex;
-        margin-top: 10px;
-      }
-      
-      .game-column {
-        display: flex;
-        flex-direction: column;
-        line-height: normal;
-        width: 50%;
-        margin-left: 0px;
-      }
-      
-      .game-button {
-        border-radius: 50px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
-          0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        border-color: rgba(129, 64, 64, 1);
-        border-style: solid;
-        border-width: 6px;
-        background-color: #ffeae5;
-        align-items: center;
-        color: #550814;
-        white-space: nowrap;
-        text-align: center;
-        width: 200px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 80px;
-        padding-right: 80px;
-      
-        font: 400 40px Righteous, sans-serif;
-      }
-      
-      .game-column-2 {
-        display: flex;
-        flex-direction: column;
-        line-height: normal;
-        width: 50%;
-        margin-left: 20px;
-      }
-      
-      .game-6 {
-        margin-top: 68px;
-        width: 100%;
-      }
-      
-      .game-7 {
-        gap: 300px;
-        display: flex;
-        margin-top: 100px;
-        margin-left: 40px;
-        margin-right: 200px;
-      }
-      
-      .game-column-3 {
-        display: flex;
-        flex-direction: column;
-        line-height: normal;
-        width: 50%;
-        margin-left: 20px;
-      }
-      
-      .lesson {
-        text-decoration: none;
-        padding-top: 20px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 100px;
-        margin-right: 100px;
-        font-family: Righteous, sans-serif;
-        font-size: 40px;
-        font-weight: 400;
-        text-align: left;
-        text-indent: 80px;
-        padding-top: 40px;
-      }
-      
-      .lesson-button {
-        text-decoration: none;
-      
-        color: #6b1523;
-        font-family: Righteous, sans-serif;
-      
-        border-radius: 50px;
-        border-color: #814040;
-        border-style: solid;
-        border-width: 7px;
-        background-color: #ffeae5;
-        width: 100%;
-      
-        padding-top: 40px;
-        padding-bottom: 40px;
-        margin-top: 20px;
-        transition: 0.5s ease; /* transition effect */
-      }
-      
-      .lesson-button:hover {
-        background-color: #6b1523;
-        color: #e9a1ad;
-      }
-      
-      .piano-container {
-        background-color: #fff7f2;
-      }
-      
-      .quiz-version {
-        text-decoration: none;
-        padding-top: 20px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 100px;
-        margin-right: 100px;
-        font-family: Righteous, sans-serif;
-        font-size: 40px;
-        font-weight: 400;
-        text-align: left;
-        text-indent: 80px;
-        padding-top: 40px;
-      }
-      
-      .quiz-info {
-        text-decoration: none;
-      
-        color: #6b1523;
-        font-family: Righteous, sans-serif;
-      
-        border-radius: 50px;
-        border-color: #814040;
-        border-style: solid;
-        border-width: 7px;
-        background-color: #ffeae5;
-        width: 100%;
-      
-        padding-top: 40px;
-        padding-bottom: 40px;
-        margin-top: 20px;
-        transition: 0.5s ease; /* transition effect */
-      }
-      
-      .quiz-info:hover {
-        background-color: #6b1523;
-        color: #e9a1ad;
-      }
-      
-      .progress-bar {
-        flex: 1;
-        height: 20px;
-        background-color: #f1f1f1;
-        border-radius: 10px;
-        overflow: hidden;
-      }
-      
-      .progress-one {
-        width: 0;
-        height: 100%;
-        background-color: green;
-        transition: width 0.5s ease;
-      }
-      
-      .progress-two {
-        width: 0;
-        height: 100%;
-        background-color: green;
-        transition: width 0.5s ease;
-      }
-      .progress-three {
-        width: 0;
-        height: 100%;
-        background-color: green;
-        transition: width 0.5s ease;
-      }
-      .progress-four {
-        width: 0;
-        height: 100%;
-        background-color: green;
-        transition: width 0.5s ease;
-      }
+
+
 
       
+      select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding: 10px 30px 10px 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'><path fill='%23333' d='M7.41,8.59L12,13.17l4.59-4.58L18,10l-6,6l-6-6L7.41,8.59z'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 20px;
+        width: 200px;
+        cursor: pointer;
+        transition: border-color 0.3s;
+      }
       
+      select:hover,
+      select:focus {
+        border-color: #888;
+        outline: none;
+      }
+      
+      select option {
+        background-color: #fff;
+        color: #333;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+      }
+      
+      select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding: 10px 30px 10px 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'><path fill='%23333' d='M7.41,8.59L12,13.17l4.59-4.58L18,10l-6,6l-6-6L7.41,8.59z'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 20px;
+        width: 200px;
+        cursor: pointer;
+        transition: border-color 0.3s;
+      }
+      
+      select:hover,
+      select:focus {
+        border-color: #888;
+        outline: none;
+      }
+      
+      select option {
+        background-color: #fff;
+        color: #333;
+      }
+      
+      button {
+        margin-top: 20px;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: #6b1523;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      button:hover {
+        background-color: #e9a1ad;
+      }
