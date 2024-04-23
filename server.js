@@ -9,6 +9,7 @@ var users = [
     lessonProgress: 1,
     score: 100,
     quizScore: [0, 0, 0, 0],
+    matchScore: [0, 0],
     topRank: 1,
     goal: "I want to learn as much as I can!",
   },
@@ -19,6 +20,7 @@ var users = [
     lessonProgress: 2,
     score: 100,
     quizScore: [0, 0, 0, 0],
+    matchScore: [0, 0],
     topRank: 1,
     goal: "I want to improve my sight reading skills!",
   },
@@ -29,6 +31,7 @@ var users = [
     lessonProgress: 3,
     score: 100,
     quizScore: [0, 0, 0, 0],
+    matchScore: [0, 0],
     topRank: 1,
     goal: "I just want to dip my toes in music theory!",
   },
@@ -39,6 +42,7 @@ var users = [
     lessonProgress: 4,
     score: 100,
     quizScore: [0, 0, 0, 0],
+    matchScore: [0, 0],
     topRank: 1,
     goal: "I want to get number 1 on the leaderboard!",
   },
@@ -49,6 +53,7 @@ var users = [
     lessonProgress: 0,
     score: 100,
     quizScore: [0, 0, 0, 0],
+    matchScore: [0, 0],
     topRank: 1,
     goal: "I want to get help and feedback with my music composition!",
   },
@@ -60,6 +65,17 @@ function updateQuizScore(username, index, newScore) {
   if (currentUser && currentUser.username === username) {
     if (newScore > currentUser.quizScore[index]) {
       currentUser.quizScore[index] = newScore;
+      localStorage.setItem("currentUser", JSON.stringify(currentUser));
+    }
+  }
+}
+
+//Function to update Users current match game score
+function updateMatchGameScore(username, index, newScore) {
+  var currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  if (currentUser && currentUser.username === username) {
+    if (newScore > currentUser.matchScore[index]) {
+      currentUser.matchScore[index] = newScore;
       localStorage.setItem("currentUser", JSON.stringify(currentUser));
     }
   }
@@ -106,3 +122,4 @@ function handleRegistrationRequest(userData, callback) {
 window.handleLoginRequest = handleLoginRequest;
 window.handleRegistrationRequest = handleRegistrationRequest;
 window.updateQuizScore = updateQuizScore;
+window.updateMatchGameScore = updateMatchGameScore;

@@ -162,3 +162,157 @@ h1 {
   background-color: rgba(255, 255, 0, 0.3);
   display: none;
 }
+
+.match-version {
+  text-decoration: none;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: Righteous, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+  text-indent: 80px;
+  padding-top: 40px;
+}
+
+.match-info {
+  text-decoration: none;
+
+  color: #6b1523;
+  font-family: Righteous, sans-serif;
+
+  border-radius: 50px;
+  border-color: #814040;
+  border-style: solid;
+  border-width: 7px;
+  background-color: #ffeae5;
+  width: 100%;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  transition: 0.5s ease; /* transition effect */
+}
+
+.match-info:hover {
+  background-color: #6b1523;
+  color: #e9a1ad;
+}
+
+.match-bar {
+  flex: 1;
+  height: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.match-one {
+  width: 0;
+  height: 100%;
+  background-color: green;
+  transition: width 0.5s ease;
+}
+
+.match-two {
+  width: 0;
+  height: 100%;
+  background-color: green;
+  transition: width 0.5s ease;
+}
+
+.container-match {
+  display: flex;
+  text-align: center;
+  justify-content: center; /* Center the container horizontally */
+  align-items: center; /* Center the container vertically */
+  margin-top: 50px; /* Add some top margin for spacing */
+}
+
+.left,
+.right {
+  width: 45%; /* Make the boxes slightly smaller to accommodate space */
+}
+
+.right {
+  margin-left: 150px; /* Add margin to create space between left and right */
+}
+.left {
+  margin-left: 150px;
+}
+h2 {
+  color: #6b1523;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.right li {
+  background-color: lightgoldenrodyellow;
+}
+
+li {
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+  border: 5px solid #ccc;
+  border-radius: 50px;
+  height: 100px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+li + li {
+  margin-top: 50px;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+.score-container {
+  text-align: center;
+  margin-top: 20px;
+  /* width: 500px; */
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.score-match {
+  color: blue;
+  border: 1px solid #ccc;
+  width: 250px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: yellow;
+  margin-bottom: 50px;
+}
+
+.match-submit {
+  color: black;
+  border: 1px solid #ccc;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: green;
+  margin-bottom: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.match-submit:hover {
+  background-color: #6b1523;
+}
