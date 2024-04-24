@@ -122,7 +122,7 @@ u {
 .mainLogo {
   aspect-ratio: 2.56;
   object-position: left;
-  width: 800px;
+  width:900px;
   flex-grow: 1;
 }
 
