@@ -1,5 +1,5 @@
 // Array of clef image file paths
-const clefs = ['Notes/treble.png', 'Notes/bass.png', 'Notes/alto.png', 'Notes/tenor.png'];
+const clefs = ['Notes/treble.png', 'Notes/bass.png', 'Notes/alto.png'];
 
 // Array of note names
 const notes = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];
@@ -11,7 +11,7 @@ const positions = ['line1', 'space1', 'line2', 'space2', 'line3', 'space3', 'lin
 const difficultyLevels = {
   easy: { clefs: ['Notes/treble.png'], positions: 3 },
   medium: { clefs: ['Notes/treble.png', 'Notes/bass.png'], positions: 5 },
-  hard: { clefs: ['Notes/treble.png', 'Notes/bass.png', 'Notes/alto.png', 'Notes/tenor.png'], positions: 7 }
+  hard: { clefs: ['Notes/treble.png', 'Notes/bass.png', 'Notes/alto.png'], positions: 7 }
 };
 
 const treblePositionNotes = {
