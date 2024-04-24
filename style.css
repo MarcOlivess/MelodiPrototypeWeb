@@ -121,9 +121,8 @@ u {
 
 .mainLogo {
   aspect-ratio: 2.56;
-  object-fit: auto;
-  object-position: center;
-  width: 80%;
+  object-position: left;
+  width: 800px;
   flex-grow: 1;
 }
 
